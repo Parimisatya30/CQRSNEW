@@ -1,0 +1,36 @@
+﻿@TodoApp.API_HostAddress = https://localhost:5001
+
+GET {{TodoApp.API_HostAddress}}/todos
+
+###
+
+GET {{TodoApp.API_HostAddress}}/todos/8cfc6315-fa8f-4468-b1a0-7146dc16dc4b
+
+###
+
+GET {{TodoApp.API_HostAddress}}/todos/complete
+
+###
+
+POST {{TodoApp.API_HostAddress}}/todos
+Content-Type: application/json
+
+{
+    "name": "Finish reading Clean Code with C# book"
+}
+###
+
+
+PUT {{TodoApp.API_HostAddress}}/todos/e1fe37df-08d5-4c1f-a1e6-0889b8dc83e8
+Content-Type: application/json
+
+{   "id":"c016bc4b-2cc2-424f-b13c-be21c1f526b5",
+    "name": "Complete Todo project",
+    "isCompleted": true
+}
+
+###
+
+DELETE {{TodoApp.API_HostAddress}}/todos/1016bc4b-2cc2-424f-b13c-be21c1f526b5
+
+###
